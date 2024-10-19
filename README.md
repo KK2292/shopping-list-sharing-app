@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# ThankYouList
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## どんなサービス？
 
-Currently, two official plugins are available:
+買いたい物を共有することで、おつかいをスムーズに頼める買い物リスト共有アプリです。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 機能要件
 
-## Expanding the ESLint configuration
+| 機能                         | 説明                                                                         |
+| ---------------------------- | ---------------------------------------------------------------------------- |
+| グループ機能                 | タスクを共有できる場　複数人が参加できる                                     |
+| グループの作成               | グループをを作成、削除できる                                                 |
+| グループへの招待             | グループへ他のユーザーを招待できる                                           |
+| グループから退出する・させる | グループから自分もしくは他のユーザーを退出させられる                         |
+| タスク機能                   | 買いたい物をの情報 名前、数、メモ、画像を情報として持つ                      |
+| タスクの作成                 | グループの中にタスクを新しく作成できる                                       |
+| タスクの編集                 | タスクに登録した情報を編集、削除できる                                       |
+| ユーザー認証                 | ユーザーのログアウト、ログインができる登録、退会、ユーザー情報の変更ができる |
+| ユーザー情報編集             | ユーザー登録、退会、ユーザー情報の編集ができる                               |
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+以下必須ではないが欲しい機能
+| 機能 | 説明 |
+| ---------------------- | -------------------------------------------------- |
+| 優先度 | タスクに優先度をつけられる機能 |
+| タスクの並べ替え | 新しい順、古い順、優先度順に並び替える機能 |
+| 買ったものの履歴 | 履歴からいつ、誰が、何を買ったか見られる<br>履歴から再度追加できる |
+| 予測候補表示 | 買いたい物を入力している途中で候補を表示する<br>名前と画像を表示する |
+| 予測候補を編集、追加できる機能 | 予測候補の名前と画像を編集できる |
+| チャット機能 | タスク内のユーザ同士がチャットで会話できる機能 |
